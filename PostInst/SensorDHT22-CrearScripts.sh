@@ -73,3 +73,4 @@ echo ""
    echo 'finally:'                                                                                   >> /home/pi/LeerDHT22YGuardarEnInfluxDB.py
    echo '  db.close()'                                                                               >> /home/pi/LeerDHT22YGuardarEnInfluxDB.py
    chmod +x /home/pi/LeerDHT22YGuardarEnInfluxDB.py
+
