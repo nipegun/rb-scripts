@@ -5,9 +5,9 @@
 # Si se te llena la boca hablando de libertad entonces hazlo realmente libre.
 # No tienes que aceptar ningún tipo de términos de uso o licencia para utilizarlo o modificarlo porque va sin CopyLeft.
 
-#-------------------------------------------------------------------------------------------------------------------
-#  Script de NiPeGun para crear el servicio para los scripts de simulación de lectura del sensor DHT22 para Debian
-#-------------------------------------------------------------------------------------------------------------------
+#-----------------------------------------------------------------------------------------------------
+#  Script de NiPeGun para crear el servicio para los scripts de lectura del sensor DHT22 para Debian
+#-----------------------------------------------------------------------------------------------------
 
 ## Crear el servicio de lectura y guardado
    echo "[Unit]"                                                                     > /etc/systemd/system/DHT22.service
