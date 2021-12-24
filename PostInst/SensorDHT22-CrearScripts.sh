@@ -13,21 +13,21 @@ echo ""
 echo "  Creando el script de lectura simple..."
 echo ""
 ## Creación del script que lee el sensor
-   echo '#!/usr/bin/python3'                                                                  > /home/pi/LeerDHT22.py
-   echo ''                                                                                   >> /home/pi/LeerDHT22.py
-   echo 'import Adafruit_DHT'                                                                >> /home/pi/LeerDHT22.py
-   echo 'import json'                                                                        >> /home/pi/LeerDHT22.py
-   echo ''                                                                                   >> /home/pi/LeerDHT22.py
-   echo 'DHT_SENSOR = Adafruit_DHT.DHT22'                                                    >> /home/pi/LeerDHT22.py
-   echo 'DHT_PIN = 4'                                                                        >> /home/pi/LeerDHT22.py
-   echo ''                                                                                   >> /home/pi/LeerDHT22.py
-   echo 'while True:'                                                                        >> /home/pi/LeerDHT22.py
-   echo '  humidity, temperature = Adafruit_DHT.read_retry(DHT_SENSOR, DHT_PIN)'             >> /home/pi/LeerDHT22.py
-   echo '  if humidity is not None and temperature is not None:'                             >> /home/pi/LeerDHT22.py
-   echo "    print(json.dumps({'Temperatura': temperature, 'Humedad': humidity}, indent=2))" >> /home/pi/LeerDHT22.py
-   echo '  else:'                                                                            >> /home/pi/LeerDHT22.py
-   echo '    print("Failed to retrieve data from humidity sensor")'                          >> /home/pi/LeerDHT22.py
-   chmod +x /home/pi/LeerDHT22.py
+   echo '#!/usr/bin/python3'                                                                  > /home/pi/DHT22-Sensor-Leer.py
+   echo ''                                                                                   >> /home/pi/DHT22-Sensor-Leer.py
+   echo 'import Adafruit_DHT'                                                                >> /home/pi/DHT22-Sensor-Leer.py
+   echo 'import json'                                                                        >> /home/pi/DHT22-Sensor-Leer.py
+   echo ''                                                                                   >> /home/pi/DHT22-Sensor-Leer.py
+   echo 'DHT_SENSOR = Adafruit_DHT.DHT22'                                                    >> /home/pi/DHT22-Sensor-Leer.py
+   echo 'DHT_PIN = 4'                                                                        >> /home/pi/DHT22-Sensor-Leer.py
+   echo ''                                                                                   >> /home/pi/DHT22-Sensor-Leer.py
+   echo 'while True:'                                                                        >> /home/pi/DHT22-Sensor-Leer.py
+   echo '  humidity, temperature = Adafruit_DHT.read_retry(DHT_SENSOR, DHT_PIN)'             >> /home/pi/DHT22-Sensor-Leer.py
+   echo '  if humidity is not None and temperature is not None:'                             >> /home/pi/DHT22-Sensor-Leer.py
+   echo "    print(json.dumps({'Temperatura': temperature, 'Humedad': humidity}, indent=2))" >> /home/pi/DHT22-Sensor-Leer.py
+   echo '  else:'                                                                            >> /home/pi/DHT22-Sensor-Leer.py
+   echo '    print("Failed to retrieve data from humidity sensor")'                          >> /home/pi/DHT22-Sensor-Leer.py
+   chmod +x /home/pi/DHT22-Sensor-Leer.py
 
 echo ""
 echo "  Creando el script de lectura simple..."
